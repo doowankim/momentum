@@ -16,7 +16,7 @@ class SearchContainer extends Component {
     handleSubmit = e => {
         e.preventDefault();
         // 현재 입력된 value 값이 쿼리문에 담긴 url주소로 리다이렉트
-        window.location.href = `https://www.bing.com/search?q=${this.state.value}&PC=ATMM&FORM=MMXT01`;
+        window.location.href = `https://www.google.com/search?q=${this.state.value}&PC=ATMM&FORM=MMXT01`;
     }
 
     searchButton = () => {
