@@ -21,18 +21,18 @@ class SearchContainer extends Component {
 
     searchButton = () => {
         this.setState({
-            isOpen: !this.state.isOpen
+            isOpen: true
         });
     }
     render() {
         const { value, isOpen } = this.state;
         return (
             <SearchPresenter
-                handleSubmit={this.handleSubmit}
-                searchButton={this.searchButton}
-                handleChange={this.handleChange}
-                isOpen={isOpen}
                 value={value}
+                isOpen={isOpen}
+                handleSubmit={this.handleSubmit}
+                handleChange={this.handleChange}
+                searchButton={this.searchButton}
             />
         );
     }

@@ -35,7 +35,7 @@ class App extends Component {
     render() {
         const { name } = this.state;
         return (
-            <div>
+            <>
                 <GlobalStyle />
                 {name === null ? (
                         <Name saveName={this.saveName} />
@@ -45,7 +45,7 @@ class App extends Component {
                             <Search />
                         </>
                     )}
-            </div>
+            </>
         );
     }
 }

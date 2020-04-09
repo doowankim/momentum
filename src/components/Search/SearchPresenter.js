@@ -25,7 +25,7 @@ const Input = styled.input`
   border-bottom: 2px solid #fff;
   padding-left: 1.5rem;
   padding-bottom: 0.5rem;
-  visibility: ${prop => (prop.isOpen === true ? 'visible' : 'hidden')};
+  // visibility: ${prop => (prop.isOpen === true ? 'visible' : 'hidden')};
 `;
 
 const SearchPresenter = ({ value, isOpen, handleSubmit, handleChange, searchButton }) => (
@@ -33,7 +33,7 @@ const SearchPresenter = ({ value, isOpen, handleSubmit, handleChange, searchButt
         <Text>Search</Text>
         <form onSubmit={handleSubmit}>
             <SearchIcon className="fas fa-search" onClick={searchButton}/>
-            <Input value={value} handleChange={handleChange} isOpen={isOpen} />
+            <Input value={value} onChange={handleChange} isOpen={isOpen} />
         </form>
     </Container>
 );
