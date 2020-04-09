@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import GlobalStyle from "./components/GlobalStyle";
 import Name from './components/Name';
 import Clock from './components/Clock';
+import Search from './components/Search';
 
 class App extends Component {
     // name 이라는 state 초기 설정
@@ -14,7 +15,7 @@ class App extends Component {
         this.setState({
             name: data, // name에 입력받은 data를 넣으면서 state를 수정
         });
-        localStorage.setItem('MOMENTUM_NAME', data); // localStorage에
+        localStorage.setItem('MOMENTUM_NAME', data); // localStorage에 입력받은 name 값(data)을 저장
     };
 
     // getName 함수를 통하여 현재 localStorage에 저장된 name 값이 null이 아닌 경우에 name 값을 저장하도록 함
@@ -41,6 +42,7 @@ class App extends Component {
                     ) : (
                         <>
                             <Clock name={name} />
+                            <Search />
                         </>
                     )}
             </div>
