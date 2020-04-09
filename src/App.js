@@ -3,6 +3,7 @@ import GlobalStyle from "./components/GlobalStyle";
 import Name from './components/Name';
 import Clock from './components/Clock';
 import Search from './components/Search';
+import Weather from './components/Weather';
 
 class App extends Component {
     // name 이라는 state 초기 설정
@@ -43,6 +44,7 @@ class App extends Component {
                         <>
                             <Clock name={name} />
                             <Search />
+                            <Weather />
                         </>
                     )}
             </>
